@@ -12,6 +12,10 @@ sudo apt upgrade -y
 echo "Instalando pacotes essenciais..."
 sudo apt install -y curl wget git vim htop
 
+# Instalando o Python 3 e pip (gerenciador de pacotes do Python)
+echo "Instalando o Python 3 e pip..."
+sudo apt install -y python3 python3-pip
+
 # Instalando o Visual Studio Code
 echo "Instalando o Visual Studio Code..."
 sudo apt install -y software-properties-common apt-transport-https curl
@@ -31,6 +35,10 @@ sudo apt install -y furiusisomount
 # Verificando as versões dos programas instalados
 echo "Verificando as versões dos programas instalados..."
 
+# Python 3
+python3 --version
+pip3 --version
+
 # Visual Studio Code
 code --version
 
@@ -48,6 +56,3 @@ vim --version
 htop --version
 
 echo "Todos os pacotes foram instalados com sucesso!"
-
-
-
